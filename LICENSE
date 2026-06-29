@@ -1,0 +1,74 @@
+Security Suite — combined license
+==================================
+
+Security Suite is an aggregate work that bundles material from several upstream
+projects and adds original content. Different parts carry different licenses. This
+file explains the overall position; the full text of every upstream license is in the
+`licenses/` directory, and `NOTICE.md` lists exactly which component came from where.
+
+--------------------------------------------------------------------------------
+1. Original content in this package — MIT License
+--------------------------------------------------------------------------------
+The following parts are original to this distribution and are released under the MIT
+License (below): the unified marketplace/plugin manifests, the full-codebase scan
+framework (`security-suite/scripts/security-scan.sh`), the `security-audit`,
+`sast-scanning`, `recon-automation`, and `dependency-security` skills, the
+`/security-scan` command, and the README/NOTICE documentation.
+
+MIT License
+
+Copyright (c) 2026 ICTRecht / Mark Zijlstra
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+--------------------------------------------------------------------------------
+2. Bundled upstream content — MIT License (separate copyright holders)
+--------------------------------------------------------------------------------
+The following material is copied into this package and remains under its own MIT
+License; the original copyright notices are retained in `licenses/`:
+
+  - secskills (16 skills + 6 agents)        © 2025 Tri Luu          licenses/secskills-MIT.txt
+  - claude-code-owasp (owasp-security)      © 2026                  licenses/claude-code-owasp-MIT.txt
+  - awesome-skills-security (7 skills)      © 2026 Eyadkelleh       licenses/awesome-skills-security-MIT.txt
+  - ponytail (commands + hooks)             © 2026 DietrichGebert   licenses/ponytail-MIT.txt
+  - SecLists data behind the wordlist skills © 2012-2026 D. Miessler licenses/SecLists-upstream-MIT.txt
+
+--------------------------------------------------------------------------------
+3. Wrapped (NOT bundled) external tools — their own licenses
+--------------------------------------------------------------------------------
+These tools are NOT redistributed in this package. The wrapper skills install them
+from their own upstream sources at runtime, where they are governed by their own
+licenses:
+
+  - ReconForge  — MIT License        © 2026 ferasbusiness666   licenses/ReconForge-MIT.txt
+  - MEDUSA      — GNU AGPL-3.0        © Pantheon-Security       licenses/medusa-AGPL-3.0.txt
+
+Because no MEDUSA source code is included here, this aggregate is not a derivative of
+MEDUSA and the AGPL-3.0 copyleft does not extend to this package. When a user installs
+MEDUSA (e.g. `pip install medusa-security`) they receive it directly from its authors
+under AGPL-3.0 and must comply with that license in their own use.
+
+--------------------------------------------------------------------------------
+4. No-warranty / authorized-use notice
+--------------------------------------------------------------------------------
+This package contains offensive-security material intended for authorized testing,
+research, and education only. It is provided "as is", without warranty of any kind.
+You are solely responsible for ensuring you have explicit authorization for any system
+you test. See NOTICE.md for the sanitization policy applied to the payload/webshell
+skills.

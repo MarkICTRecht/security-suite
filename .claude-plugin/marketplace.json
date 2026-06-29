@@ -1,0 +1,25 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "security-suite-marketplace",
+  "owner": {
+    "name": "ICTRecht (Mark Zijlstra)",
+    "url": "https://github.com/ictrecht"
+  },
+  "metadata": {
+    "description": "Unified security marketplace combining six upstream security projects into one Claude Code plugin: offensive skills + subagents, OWASP defensive review, MEDUSA SAST, ReconForge recon, Dependabot supply-chain security, SecLists wordlists, and ponytail code-review.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "security-suite",
+      "source": "./security-suite",
+      "description": "All-in-one security toolkit: 25 skills, 6 specialist subagents, and code-review commands spanning offensive, defensive, recon, and supply-chain security.",
+      "version": "1.0.0",
+      "category": "security",
+      "author": {
+        "name": "ICTRecht (Mark Zijlstra)",
+        "url": "https://github.com/ictrecht"
+      }
+    }
+  ]
+}

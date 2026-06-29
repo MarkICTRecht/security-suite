@@ -1,0 +1,18 @@
+{
+  "name": "security-suite",
+  "version": "1.1.0",
+  "description": "All-in-one security toolkit for Claude Code: 28 skills + 6 specialist subagents + commands. Offensive security (pentest, red team, cloud, mobile, Web3, AD, privesc, wireless, phishing), defensive review (OWASP 2025/2026, multi-language SAST via MEDUSA), reconnaissance automation (ReconForge), supply-chain security (Dependabot), curated SecLists wordlists/payloads/patterns, plus a full-codebase scan framework (/security-scan) and code-review commands.",
+  "author": {
+    "name": "Combined by ICTRecht (Mark Zijlstra)",
+    "url": "https://github.com/ictrecht"
+  },
+  "agents": [
+    "./agents/pentester.md",
+    "./agents/cloud-pentester.md",
+    "./agents/mobile-pentester.md",
+    "./agents/recon-specialist.md",
+    "./agents/red-team-operator.md",
+    "./agents/web3-auditor.md"
+  ],
+  "hooks": "./hooks/claude-codex-hooks.json"
+}
