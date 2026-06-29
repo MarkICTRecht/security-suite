@@ -6,12 +6,12 @@ spanning offensive security, defensive review, reconnaissance automation, softwa
 supply-chain security, and a reusable **full-codebase scan framework**.
 
 <p align="center">
-  <a href="https://github.com/MarkICTRecht/security-suite/archive/refs/heads/main.zip">
-    <img src="https://img.shields.io/badge/⬇%20Download%20ZIP-2ea44f?style=for-the-badge&logo=github&logoColor=white" alt="Download ZIP">
+  <a href="https://github.com/MarkICTRecht/security-suite/releases/latest/download/security-suite-plugin.zip">
+    <img src="https://img.shields.io/badge/⬇%20Download%20plugin%20(.zip)-2ea44f?style=for-the-badge&logo=github&logoColor=white" alt="Download plugin zip">
   </a>
   &nbsp;
-  <a href="https://github.com/MarkICTRecht/security-suite">
-    <img src="https://img.shields.io/badge/version-1.1.0-blue?style=for-the-badge" alt="Version 1.1.0">
+  <a href="https://github.com/MarkICTRecht/security-suite/releases/latest">
+    <img src="https://img.shields.io/github/v/release/MarkICTRecht/security-suite?style=for-the-badge&color=blue" alt="Latest release">
   </a>
   &nbsp;
   <a href="LICENSE">
@@ -19,7 +19,7 @@ supply-chain security, and a reusable **full-codebase scan framework**.
   </a>
 </p>
 
-<p align="center"><sub>⬇ Click <b>Download ZIP</b>, unzip, and drag the folder into Claude — or install via the marketplace commands below.</sub></p>
+<p align="center"><sub>⬇ Download the plugin zip, then in Claude → Customize → Plugins → <b>Upload local plugin</b>. Or install via the marketplace commands below.</sub></p>
 
 > ⚠️ **Authorized use only.** The offensive skills, wordlists, and recon tooling in this
 > suite are for penetration testing, red-team engagements, security research, and CTFs
