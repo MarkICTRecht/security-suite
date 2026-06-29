@@ -62,6 +62,14 @@ directory — present/open it for the user so they see the result visually, not 
 text. If the host cannot render a local HTML file inline, render an equivalent summary
 dashboard (severity ring + finding list) from `summary.json`.
 
+**Make findings actionable.** When rendering the dashboard inline in chat, add a
+one-click fix action per *fixable* finding (a `sendPrompt` button like
+"Fix CVE-2025-… in requirements.txt") plus a "Fix all real findings" button. Skip
+findings the user has explicitly accepted as deliberate risk. Clicking a fix button
+asks the agent to apply the actual change — always show the diff and confirm before
+writing. (Note: a standalone `report.html` opened in a browser can't trigger fixes;
+only the inline chat dashboard can.)
+
 ## Customizing the framework
 
 The engine is a single readable script at `scripts/security-scan.sh`. Add stages (e.g.
