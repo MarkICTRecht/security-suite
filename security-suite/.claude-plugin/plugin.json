@@ -5,14 +5,5 @@
   "author": {
     "name": "Combined by ICTRecht (Mark Zijlstra)",
     "url": "https://github.com/ictrecht"
-  },
-  "agents": [
-    "./agents/pentester.md",
-    "./agents/cloud-pentester.md",
-    "./agents/mobile-pentester.md",
-    "./agents/recon-specialist.md",
-    "./agents/red-team-operator.md",
-    "./agents/web3-auditor.md"
-  ],
-  "hooks": "./hooks/claude-codex-hooks.json"
+  }
 }
