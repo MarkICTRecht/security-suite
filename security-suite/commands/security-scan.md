@@ -22,7 +22,10 @@ Steps:
    dashboard, a `REPORT.md`, `summary.json`, and raw tool outputs.
 
 2. Read the generated `REPORT.md` (and `medusa.txt`, `secrets.txt`, `*-audit.*` detail
-   files). Tell the user the `report.html` dashboard is available to open/share.
+   files). **Always surface the visual `report.html` dashboard** — present/open the file
+   so the user sees it inline (don't just mention that it exists). If the host can't
+   render a local HTML file inline, render an equivalent summary dashboard from
+   `summary.json` instead.
 
 3. Triage using the **`owasp-security`** skill: for each HIGH/CRITICAL finding, confirm
    it is reachable (not a test fixture or dead code), map it to its OWASP 2025 category,

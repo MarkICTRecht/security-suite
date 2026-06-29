@@ -57,6 +57,11 @@ Deliver a deduplicated, severity-ordered action list: `[SEV] <finding> → <fix>
 report path. Keep it concise — detail lives in the report files
 (`REPORT.md`, `medusa.txt`, `secrets.txt`, `*-audit.*`).
 
+**Always surface the visual dashboard.** The engine writes `report.html` to the report
+directory — present/open it for the user so they see the result visually, not just as
+text. If the host cannot render a local HTML file inline, render an equivalent summary
+dashboard (severity ring + finding list) from `summary.json`.
+
 ## Customizing the framework
 
 The engine is a single readable script at `scripts/security-scan.sh`. Add stages (e.g.
