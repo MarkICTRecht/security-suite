@@ -1,0 +1,14 @@
+# FuzzDB File-Name injection payloads — documented as text
+#
+# Upstream SecLists ships these as zero-byte files whose *filename* is the payload.
+# Those literal names ($(...), backticks, %00) break zip extraction on macOS/Windows,
+# so they are listed here as text instead. To use them, create files with these exact
+# names yourself — only in an isolated lab against systems you are authorized to test.
+
+## Command substitution / execution
+Hello$(hostname)World.txt
+Hello`hostname`World.txt
+
+## Null-byte truncation
+Hello%00World.txt
+Hello.php%00World.txt
